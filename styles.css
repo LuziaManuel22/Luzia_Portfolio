@@ -234,6 +234,9 @@ img {
   right: -10%;
   bottom: -35%;
   z-index: -1;
+  bottom: -4%;
+  width: 95rem;
+ 
  
   
 }
@@ -512,9 +515,9 @@ img {
 
 .col-1 svg {
   position: absolute;
-  width: 85rem;
-  bottom: -4%;
-  left: -40%;
+  width: 83rem;
+  bottom: -8%;
+  left: -27%;
   fill: var(--customColor);
   transition: var(--transition-2);
   z-index: -1;
@@ -523,9 +526,9 @@ img {
 .col-1 img {
   position: absolute;
   bottom: -4%;
-  left: -40%;
+  left: -20%;
   transition: var(--transition-2);
-  width: 85rem;
+  width: 70rem;
   z-index: 0;
 }
 
