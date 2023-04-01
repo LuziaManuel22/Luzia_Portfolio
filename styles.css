@@ -43,7 +43,7 @@ body {
 }
 
 body.dark {
-  --white: #323949;
+  --white: #1c1c1e;
   --black: #fff;
   --grey: #fff;
   --grey2: #fff;
@@ -711,125 +711,7 @@ body.dark .services .row .col:hover .icon {
   }
 }
 
-/* Testimonials */
 
-.test-center {
-  display: grid;
-  grid-template-columns: 0.8fr 1.3fr;
-  gap: 5rem;
-}
-
-section.testimonials .title {
-  text-align: left;
-}
-
-.testimonials .swiper-container {
-  max-width: 50rem;
-}
-
-.testimonials .left {
-  text-align: center;
-}
-
-.testimonials .right {
-  position: relative;
-}
-
-.testimonials .right p {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: var(--grey2);
-}
-
-.testimonials .right h1 ~ span {
-  font-size: 1.5rem;
-  color: var(--grey2);
-}
-
-.testimonials .right h4 {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "";
-}
-
-.swiper-icon {
-  font-size: 5rem;
-  color: var(--customColor);
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  top: 20%;
-}
-
-.swiper-button-prev {
-  left: 80%;
-}
-
-@media (max-width: 996px) {
-  .test-center {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .testimonials .left img {
-    width: 70%;
-  }
-}
-
-@media (max-width: 567px) {
-  .testimonials .right p {
-    width: 100%;
-  }
-
-  .testimonials .swiper-container {
-    max-width: 33rem;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    top: 30%;
-  }
-
-  .swiper-button-prev {
-    left: 55%;
-  }
-
-  .swiper-button-next {
-    right: 60px;
-  }
-}
-
-/* Blog */
-.blog .col .img {
-  border-radius: 1rem;
-}
-
-.blog .col h3 {
-  font-size: 2rem;
-  height: 5rem;
-  margin: 0.5rem 0;
-}
-
-.blog .col p {
-  font-size: 1.5rem;
-}
-
-.blog .col a {
-  display: inline-block;
-  font-size: 1.5rem;
-  background-color: var(--customColor);
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-  transition: var(--transition-2);
-}
 
 /* Contact */
 .contact-upper {
@@ -1098,4 +980,11 @@ section.testimonials .title {
   100% {
     width: 100%;
   }
+}
+.loaded .preloader {
+  display: none;
+}
+
+.loaded #conteudo {
+  display: block;
 }

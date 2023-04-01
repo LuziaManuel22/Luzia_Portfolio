@@ -146,7 +146,7 @@ links.map((link) => {
 
 AOS.init();
 
-/*-----------preloader-----------*/
+/*-----------preloader----*/
 window.addEventListener("load", function () {
   var preloader = document.querySelector(".preloader");
   preloader.classList.add("fade-out");
