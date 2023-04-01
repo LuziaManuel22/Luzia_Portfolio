@@ -146,3 +146,12 @@ links.map((link) => {
 
 AOS.init();
 
+/*-----------preloader-----------*/
+window.addEventListener("load", function () {
+  var preloader = document.querySelector(".preloader");
+  preloader.classList.add("fade-out");
+  setTimeout(function () {
+    preloader.style.display = "none";
+    document.getElementById("conteudo").style.display = "block";
+  }, 8000);
+});
