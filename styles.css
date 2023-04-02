@@ -754,7 +754,7 @@ body.dark .services .row .col:hover .icon {
   text-indent: 1rem;
   border: none;
   border-bottom: 1px solid #ccc;
-  color: white;
+  color: rgb(28, 27, 27);
   background-color: transparent;
   border-right: 0.5rem;
   margin-bottom: 1rem;
@@ -781,6 +781,9 @@ body.dark .services .row .col:hover .icon {
   font-weight: 500;
   cursor: pointer;
 }
+.form .btn-form:hover {
+  color: black;
+}
 
 .contact .right {
   background-color: white;
@@ -794,7 +797,7 @@ body.dark .services .row .col:hover .icon {
 .contact .right div {
   display: flex;
   align-items: center;
-  color: #212121;
+  color: #0a0505;
 }
 
 .contact .right div .content h3 {
@@ -837,6 +840,11 @@ body.dark .services .row .col:hover .icon {
   .contact-center .right {
     text-align: left;
   }
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: black;
 }
 
 /* Footer
@@ -890,8 +898,10 @@ body.dark .services .row .col:hover .icon {
   padding-top: 3rem;
   text-align: center;
   font-size: var(--fs-sm);
-  color: var(--color-gray-light);
+  color: var(--color-white-light);
 }
+
+/*-----------social----------*/
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -987,4 +997,40 @@ body.dark .services .row .col:hover .icon {
 
 .loaded #conteudo {
   display: block;
+}
+/*Overlay div projects*/
+.item {
+  position: relative;
+}
+
+.item:hover .teste {
+  opacity: 1;
+}
+
+.teste {
+  transition: 0.4s;
+  background: linear-gradient(to bottom, rgb(55, 54, 54), rgba(49, 48, 48, 0.922)); /* Defina o fundo como um gradiente */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  opacity: 0;
+}
+
+.teste a {
+  border: 2px solid white;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.teste a:hover {
+  background: #000;
+  color: white;
+  border-color: white;
 }
