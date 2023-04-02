@@ -149,9 +149,11 @@ AOS.init();
 /*-----------preloader----*/
 window.addEventListener("load", function () {
   var preloader = document.querySelector(".preloader");
+  var body = document.querySelector("#body");
   preloader.classList.add("fade-out");
   setTimeout(function () {
     preloader.style.display = "none";
+    body.style.overflowY= "scroll"
     document.getElementById("conteudo").style.display = "block";
   }, 8000);
 });

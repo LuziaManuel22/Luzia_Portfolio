@@ -25,7 +25,9 @@
   --transition-2: all 500ms ease-in-out;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600;700&display=swap');
+
 
 html {
   box-sizing: border-box;
@@ -33,8 +35,14 @@ html {
   font-size: 62.5%; /*1.6rem = 16px*/
 }
 
+#body{
+
+  overflow: hidden;
+}
+
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   background-color: var(--white);
@@ -235,7 +243,7 @@ img {
   bottom: -35%;
   z-index: -1;
   bottom: -4%;
-  width: 95rem;
+  width: 90rem;
  
   
 }
@@ -363,7 +371,7 @@ img {
 .header .content {
   position: absolute;
   top: 35%;
-  left: 16%;
+  left: 12%;
 }
 
 .header .content span {
@@ -645,13 +653,15 @@ body.dark .services .row .col:hover .icon {
 }
 
 .portfolio .filter-btns span {
-  margin-right: 0.5rem;
+  margin-right: 4rem;
   padding: 1rem;
   cursor: pointer;
   transition: var(--transition-1);
   border-bottom: 2px solid transparent;
 }
-
+.portfolio .filter-btns span:first-child {
+  margin-left: 2rem;
+}
 .portfolio .filter-btns span:hover {
   color: var(--customColor);
 }
@@ -1065,6 +1075,7 @@ body.dark .services .row .col:hover .icon {
   color: white;
   padding: 20px;
   opacity: 0;
+  font-size: 14px; 
 }
 
 .teste a {
@@ -1077,5 +1088,5 @@ body.dark .services .row .col:hover .icon {
   background: #262528;
   color: white;
   border-color: white;
-  border-radius: 17px;
+  border-radius: 20px;
 }
