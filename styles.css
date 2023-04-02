@@ -43,7 +43,7 @@ body {
 }
 
 body.dark {
-  --white: #1c1c1e;
+  --white: #112230;
   --black: #fff;
   --grey: #fff;
   --grey2: #fff;
@@ -505,7 +505,9 @@ img {
   left: -36%;
   transition: var(--transition-2);
   width: 73rem;
-  z-index: -1;
+  z-index: 2;
+  border-radius: 0 0 50% 50%; /* Adicione isso para criar um canto inferior arredondado */
+
 }
 
 .col-2 {
@@ -847,11 +849,25 @@ body.dark .services .row .col:hover .icon {
   color: black;
 }
 
-/* Footer
---------------------------------------------------------------*/
+
+/*-------------------------Footer-----------------------------*/
 .footer {
   background-color: var(--color-secondary);
   padding: 8rem 0 3rem;
+}
+
+.footer__wrapper {
+  position: relative;
+}
+
+.footer__separation {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-secondary);
 }
 
 .footer__content {
@@ -874,40 +890,47 @@ body.dark .services .row .col:hover .icon {
   margin-bottom: 3.5rem;
 }
 
+.footer__item {
+  list-style: none;
+  transition: var(--transition);
+}
+
+.footer__item:hover {
+  transform: scale(1.3);
+}
+
 .footer__link {
   color: var(--color-gray-light);
   transition: var(--transition);
 }
 
 .footer__link:hover {
-  color: var(--color-primary);
+  color: var(--customColor);
+  transform: scale(2.5);
+
 }
 
 .footer__content .social__link {
   background-color: var(--color-secondary-dark);
   color: var(--color-white);
+  transition: var(--transition);
 }
+
 
 .footer__content .social__link:hover {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--customColor);
+  transform: scale(2.1);
 }
 
-.footer__copyright {
-  border-top: 0.1rem solid var(--color-border);
-  padding-top: 3rem;
-  text-align: center;
-  font-size: var(--fs-sm);
-  color: var(--color-white-light);
-}
 
-/*-----------social----------*/
 .social {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  margin-bottom: 1rem;
 }
 
 .social__list {
@@ -917,8 +940,12 @@ body.dark .services .row .col:hover .icon {
   column-gap: 2rem;
 }
 
+.social__item {
+  list-style: none;
+}
+
 .social__link {
-  background-color: var(--color-gray-lighten);
+  background-color: var(--customColor);
   width: 4.5rem;
   height: 4.5rem;
   font-size: 2rem;
@@ -926,13 +953,24 @@ body.dark .services .row .col:hover .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: var(--transition);
 }
 
 .social__link:hover {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--customColor);
+  transform: scale(1.1);
 }
+
+.footer__copyright {
+  border-top: 0.3rem solid var(--customColor);;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: var(--fs-sm);
+  color: var(--color-white-light);
+  margin-top: 2rem;
+}
+
+
 /*--------------------preloader---------*/
 .preloader {
   position: fixed;
@@ -1008,8 +1046,8 @@ body.dark .services .row .col:hover .icon {
 }
 
 .teste {
-  transition: 0.4s;
-  background: linear-gradient(to bottom, rgb(55, 54, 54), rgba(49, 48, 48, 0.922)); /* Defina o fundo como um gradiente */
+  transition: 2s;
+  background-color: var(--customColor);
   position: absolute;
   top: 0;
   width: 100%;
