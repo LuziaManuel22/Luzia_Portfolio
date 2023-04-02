@@ -239,11 +239,11 @@ img {
 
 .hero-img {
   position:absolute;
-  right: -7%;
+  right: -6%;
   bottom: -35%;
   z-index: -1;
   bottom: -4%;
-  width: 90rem;
+  width: 95rem;
  
   
 }
@@ -371,7 +371,7 @@ img {
 .header .content {
   position: absolute;
   top: 35%;
-  left: 12%;
+  left: 15%;
 }
 
 .header .content span {
