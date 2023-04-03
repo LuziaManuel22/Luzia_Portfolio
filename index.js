@@ -155,7 +155,7 @@ window.addEventListener("load", function () {
     preloader.style.display = "none";
     body.style.overflowY= "scroll"
     document.getElementById("conteudo").style.display = "block";
-  }, 5000);
+  }, 3000);
 });
 
 
