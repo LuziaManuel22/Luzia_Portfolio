@@ -82,6 +82,7 @@ window.addEventListener("scroll", () => {
 });
 
 // Filter Projects
+//faltam alguns filtros para resolver o problema do loader
 
 const filterBtn = document.querySelector(".filter-btns");
 const spans = [...document.querySelectorAll(".filter-btns span")];
